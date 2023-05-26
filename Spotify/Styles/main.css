@@ -1,0 +1,48 @@
+/* main */
+main {
+  width: 100%;
+  height: auto;
+  background-color: #FFFFFF;
+  position: relative;
+}
+
+/* mainSelectores */
+main .main1 {
+  width: auto;
+  height: 350px;
+  background-color: #1d75de;
+}
+
+main .main2 {
+  width: auto;
+  height: 550px;
+  background-color: #FFFFFF;
+  padding: 75px 50px 0 50px;
+}
+
+main .main3 {
+  width: auto;
+  height: 1045px;
+  background-color: gainsboro;
+}
+
+@media (max-width: 768px) {
+  main .main1 {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+
+  main .main2 {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+
+  main .main3 {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+}

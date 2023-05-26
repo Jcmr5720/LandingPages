@@ -1,0 +1,88 @@
+/* main3 */
+.main31 {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  padding: 75px 0 10px 0;
+}
+
+.main32 {
+  font-size: 16px;
+  text-align: center;
+  padding: 0 0 10px 0;
+}
+
+.main33 {
+  text-align: center;
+}
+
+.main33 img {
+  width: 100px;
+  height: 25px;
+}
+/* CompraPaquetes */
+.containar1-main3 {
+  width: auto;
+  height: auto;
+  margin: 75px 0 0 0;
+  display: grid;
+  grid-template-columns: repeat(4, 250px);
+  grid-gap: 20px;
+  justify-content: center;
+}
+
+.subcontainer1-main3 {
+  height: 400px;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgb(212, 212, 212);
+}
+
+.subcontainer1-main31 {
+  width: auto;
+  height: auto;
+  padding: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #FFFFFF;
+  background-color: #1d75de;
+  border-radius: 5px;
+}
+
+.subcontainer1-main32 {
+  width: auto;
+  height: auto;
+  padding: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #1d75de;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  border: 1px solid #1d75de;
+}
+
+.subcontainer1-main33 {
+  width: auto;
+  height: auto;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.subcontainer1-main34 {
+  width: auto;
+  height: auto;
+  font-size: 16px;
+  margin-top: 10px;
+  text-align: justify;
+}
+
+@media (max-width: 700px) {
+  .containar1-main3 {
+    grid-template-columns: auto;
+  }
+}
+

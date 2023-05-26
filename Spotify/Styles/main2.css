@@ -1,0 +1,47 @@
+/* main2 */
+main .main21 {
+    font-size: 46px;
+    font-weight: bold;
+    text-align: center;
+    color: #000000;
+  }
+  
+  main .main22 {
+    width: auto;
+    height: auto;
+  }
+  
+  .main22 img {
+    width: 142px;
+    height: 142px;
+  }
+  
+  .grid-container {
+    margin-top: 75px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .grid-item {
+    text-align: center;
+  }
+  
+  .grid-item2 {
+    font-size: 21px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .grid-item3 {
+    font-size: 16px;
+    text-align: center;
+    margin: 0 21px 0 21px;
+  }
+
+  @media (max-width: 700px) {
+    .grid-container {
+      grid-template-columns: auto;
+    }
+    
+  }
