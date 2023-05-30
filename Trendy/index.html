@@ -14,14 +14,28 @@
 <body>
     <header>
         <section class="header1">
-            <div class="header11"><p>Envíos GRATIS para comprar superiores a $300.000 COP. Nuestros tiempos promedio de
-                entrega son de 3 a 5 días hábiles en ciudades principales.</p></div>
+            <div class="header11">
+                <p>Envíos GRATIS para comprar superiores a $300.000 COP. Nuestros tiempos promedio de
+                    entrega son de 3 a 5 días hábiles en ciudades principales.</p>
+            </div>
         </section>
-        <section class="header2"></section>
+        <section class="header2">
+            <div class="header21">
+                <input type="text" class="input1">
+                <div class="logo"></div>
+            </div>
+        </section>
         <section class="header3">
             <nav>
                 <ul>
-                    <li><a href="">ACCESORIOS</a></li>
+                    <li class="dropdown">
+                        <a href="#" onmouseover="myFunction()" class="dropbtn">ACCESORIOS</a>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="#">Opción 1</a>
+                            <a href="#">Opción 2</a>
+                            <a href="#">Opción 3</a>
+                        </div>
+                    </li>
                     <li><a href="">BROCHAS</a></li>
                     <li><a href="">CEJAS</a></li>
                     <li><a href="">CORPORAL</a></li>
@@ -40,6 +54,7 @@
     </header>
     <main></main>
     <footer></footer>
+    <script src="./index.js"></script>
 </body>
 
 </html>
