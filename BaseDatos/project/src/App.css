@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    font-family: sans-serif;
+}
+.main1 {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 2;
+    gap: 20px;
+}
+
+.divformulario {
+    width: auto;
+    height: auto;
+    border: 1px solid black;
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 2;
+    gap: 20px;
+}
+
+.formulario {
+    width: 500px;
+    height: auto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: 2;
+    gap: 20px;
+}
+
+.formulario input {
+    width: 500px;
+    height: 30px;
+}
+
+.formulario button {
+    width: 100px;
+    height: 50px;
+}
+
+.formulario .formButtons {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.divtext {
+    width: auto;
+    height: auto;
+    border: 1px solid black;
+    padding: 10px;
+}
