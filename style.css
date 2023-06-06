@@ -192,3 +192,33 @@ main .mainContainer1 li:hover {
     font-style: italic;
     color: #888;
 }
+
+@media (max-width: 768px) {
+    main {
+        height: auto;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        grid-row-gap: 10px;
+    }
+
+    .main1 {
+        height: auto;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        grid-row-gap: 10px;
+    }
+
+    .main2 {
+        height: auto;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
+        grid-row-gap: 10px;
+    }
+
+    .mainContainer21 {
+        justify-content: start;
+    }
+}
