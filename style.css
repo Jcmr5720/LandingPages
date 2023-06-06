@@ -11,6 +11,10 @@ a {
     color: blueviolet;
 }
 
+a:visited {
+    color: cadetblue;
+}
+
 ul {
     list-style: decimal-leading-zero;
 }
@@ -31,9 +35,12 @@ main {
     width: 100%;
     height: auto;
     position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
-main .mainContainer1 {
+main .mainContainer1,
+.mainContainer2 {
     padding: 10px 20px 20px 20px;
 }
 
@@ -47,9 +54,42 @@ main .mainContainer1 li {
 }
 
 main .mainContainer1 .p1 {
+    font-family: 'Courier New', monospace;
     font-weight: bold;
     font-size: 48px;
+    color: rgb(5, 65, 5);
     position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 2.5s steps(40) 1 forwards;
+    width: 0;
+    max-width: fit-content;
+}
+
+main .mainContainer1 .p1::after {
+    content: "|";
+    display: inline-block;
+    width: 0.15em;
+    height: 1em;
+    margin-left: 5px;
+    background-color: rgb(5, 65, 5);
+    animation: blink-caret 1s infinite;
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    100% {
+        opacity: 0;
+    }
 }
 
 main .mainContainer1 .p2 {
@@ -62,6 +102,44 @@ main .mainContainer1 .p2 {
 main .mainContainer1 li:hover {
     text-decoration: underline;
 }
+
+.mainContainer21 {
+    display: grid;
+    grid-template-columns: 50px 50px;
+    grid-template-rows: 50px;
+    grid-column-gap: 20px;
+    justify-content: right;
+}
+
+.mainContainer21 img {
+    width: 50px;
+    height: 50px;
+}
+
+.img02:hover {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    transform: scale(1.1) rotate(20deg);
+}
+
+.img01:hover {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: shake 0.3s ease-in-out infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(-2px);
+    }
+
+    50% {
+        transform: translateX(2px);
+    }
+
+    100% {
+        transform: translateX(-2px);
+    }
+}
+
 
 .main2 {
     width: 100%;
