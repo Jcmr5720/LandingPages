@@ -1,10 +1,15 @@
 import React, { useState } from 'react';
 import './App.css';
 import logo from './imgs/logo.png';
-import { AiOutlineBook, AiOutlineArrowDown, AiOutlineWhatsApp, AiOutlineShareAlt, AiOutlineClose } from "react-icons/ai";
+import {
+  AiOutlineBook, AiOutlineArrowDown, AiOutlineWhatsApp, AiOutlineShareAlt,
+  AiOutlineClose, AiOutlineRight, AiOutlineFacebook, AiOutlineLinkedin, AiFillTwitterSquare,
+  AiOutlineMessage, AiOutlineMail, AiOutlineLink
+} from "react-icons/ai";
 
 const App = () => {
   const [cuadro, setCuadro] = useState(false);
+  const url = window.location.href;
 
   const bCatalogo = () => {
     window.location.href = "#";
@@ -13,6 +18,14 @@ const App = () => {
   const bWhatsapp = () => {
     window.location.href = "#";
   };
+
+  const cuadrob1 = () => {
+    window.location.href = "#"
+  }
+
+  const cuadroi1 = () => {
+    navigator.clipboard.writeText(url)
+  }
 
   const bShare = () => {
     setCuadro(true);
@@ -59,7 +72,41 @@ const App = () => {
               <span><AiOutlineClose size={16} onClick={closeCuadro} /></span>
             </div>
             <div className='windows'>
-              <span>Hola mundo jeje</span>
+              <div className='windowsB1' onClick={cuadrob1}>
+                <span><AiOutlineFacebook size={32} /></span>
+                <span>Compartir en Facebook</span>
+                <span><AiOutlineRight size={32} /></span>
+              </div>
+              <div className='windowsB2' onClick={cuadrob1}>
+                <span><AiOutlineLinkedin size={32} /></span>
+                <span>Compartir en LinkedIn</span>
+                <span><AiOutlineRight size={32} /></span>
+              </div>
+            </div>
+            <div className='windowsB3' onClick={cuadrob1}>
+              <span><AiFillTwitterSquare size={32} /></span>
+              <span>Compartir en Twitter</span>
+              <span><AiOutlineRight size={32} /></span>
+            </div>
+            <div className='windowsB4' onClick={cuadrob1}>
+              <span><AiOutlineWhatsApp size={32} /></span>
+              <span>Compartir en Whatsapp</span>
+              <span><AiOutlineRight size={32} /></span>
+            </div>
+            <div className='windowsB5' onClick={cuadrob1}>
+              <span><AiOutlineMessage size={32} /></span>
+              <span>Compartir en Messenger</span>
+              <span><AiOutlineRight size={32} /></span>
+            </div>
+            <div className='windowsB6' onClick={cuadrob1}>
+              <span><AiOutlineMail size={32} /></span>
+              <span>Compartir en Correo</span>
+              <span><AiOutlineRight size={32} /></span>
+            </div>
+            <div className='windowsInput' onClick={cuadroi1}>
+              <span><AiOutlineLink size={32} /></span>
+              <span>{url}</span>
+              <span>Copiar</span>
             </div>
           </div>
         </div>

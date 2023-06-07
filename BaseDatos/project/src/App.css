@@ -44,7 +44,7 @@ main {
 
 /* DIV1 */
 main .logoi {
-    margin: 100px 0 0 0;
+    margin: 50px 0 0 0;
 }
 
 main .logoi img {
@@ -120,17 +120,17 @@ main .buttons .button2:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 300px;
-    height: 500px;
+    width: 450px;
+    height: auto;
     border: 1px solid rgb(240, 230, 230);
-    border-radius: 5px;
+    border-radius: 20px;
     background-color: white;
 }
 
 .cuadro1 {
     display: grid;
-    grid-template-columns: 2 auto;
-    padding: 5px;
+    grid-template-rows: repeat(2, auto);
+    padding: 20px;
     align-items: center;
 }
 
@@ -146,4 +146,39 @@ main .buttons .button2:hover {
 
 .cuadro .windows {
     margin: 20px 0 0 0;
+}
+
+.windowsB1,
+.windowsB2,
+.windowsB3,
+.windowsB4,
+.windowsB5,
+.windowsB6 {
+    margin: 10px 0 0 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.windowsInput {
+    margin: 10px 0 0 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid rgb(216, 203, 203);
+    border-radius: 20px;
+}
+
+.windowsB1:hover,
+.windowsB2:hover,
+.windowsB3:hover,
+.windowsB4:hover,
+.windowsB5:hover,
+.windowsB6:hover {
+    background-color: rgb(247, 239, 239);
 }
