@@ -1,56 +1,149 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;400&display=swap');
+
+* {
     margin: 0;
-    font-family: sans-serif;
+    padding: 0;
+    box-sizing: border-box;
 }
-.main1 {
+
+body {
+    font-family: 'Barlow', sans-serif;
+    font-size: 16px;
+    background-color: rgb(255, 212, 251);
+}
+
+/* HEADER */
+header {
     width: 100%;
     height: auto;
-    padding: 10px;
-    display: grid;
-    grid-template-rows: 2;
-    gap: 20px;
+    position: relative;
+    padding: 20px;
 }
 
-.divformulario {
+header .headerLogo {
     width: auto;
-    height: auto;
-    border: 1px solid black;
-    padding: 10px;
-    display: grid;
-    grid-template-rows: 2;
-    gap: 20px;
-}
-
-.formulario {
-    width: 500px;
-    height: auto;
-    display: grid;
-    justify-content: center;
+    display: flex;
     align-items: center;
-    grid-template-rows: 2;
-    gap: 20px;
+    justify-content: flex-end;
+    cursor: pointer;
 }
 
-.formulario input {
-    width: 500px;
-    height: 30px;
+header .btShare:hover svg {
+    transform: scale(1.1);
 }
 
-.formulario button {
-    width: 100px;
-    height: 50px;
-}
-
-.formulario .formButtons {
-    width: auto;
+/* MAIN */
+main {
+    width: 100%;
     height: auto;
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.divtext {
-    width: auto;
-    height: auto;
-    border: 1px solid black;
+/* DIV1 */
+main .logoi {
+    margin: 100px 0 0 0;
+}
+
+main .logoi img {
+    width: 150px;
+    height: 150px;
+}
+
+/* DIV2 */
+main .text {
+    margin: 20px 0 0 0;
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    row-gap: 10px;
+    text-align: center;
+}
+
+main .text .text1 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+main .text .text2 {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* DIV3 */
+main .buttons {
+    margin: 20px 0;
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    row-gap: 10px;
+    text-align: center;
+}
+
+main .buttons .button1,
+main .buttons .button2 {
+    width: 400px;
+    height: 50px;
+    border: 1px solid rgb(240, 230, 230);
+    border-radius: 30px;
+    background-color: white;
     padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+main .buttons .button1 .down,
+main .buttons .button2 .down {
+    visibility: hidden;
+}
+
+main .buttons .button1:hover .down,
+main .buttons .button2:hover .down {
+    visibility: visible;
+}
+
+main .buttons .button1:hover {
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+
+main .buttons .button2:hover {
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+
+/* CUADRO */
+.cuadro {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 500px;
+    border: 1px solid rgb(240, 230, 230);
+    border-radius: 5px;
+    background-color: white;
+}
+
+.cuadro1 {
+    display: grid;
+    grid-template-columns: 2 auto;
+    padding: 5px;
+    align-items: center;
+}
+
+.cuadro1 .buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cuadro1 .buttons span {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.cuadro .windows {
+    margin: 20px 0 0 0;
 }
