@@ -64,7 +64,7 @@ export function App() {
         <>
             <section className='main1'>
                 <div className='divformulario'>
-                    <h1>Formulario con React-Vite</h1>
+                    <h1>Formulario con | React- Vite - Azure |</h1>
                     <form className='formulario' onSubmit={enviar}>
                         <label>
                             <div className='label1'>

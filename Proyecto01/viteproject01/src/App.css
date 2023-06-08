@@ -104,3 +104,7 @@ body {
     display: flex;
     justify-content: space-evenly;
 }
+
+.logox svg{
+    cursor: pointer;
+}
