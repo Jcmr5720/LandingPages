@@ -1,7 +1,20 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+
+* {
     margin: 0;
-    font-family: sans-serif;
+    font-family: 'Inconsolata', monospace;
+    color: white;
 }
+
+body {
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(to bottom, purple, rgb(7, 7, 85), black);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 .main1 {
     width: 100%;
     height: auto;
@@ -11,18 +24,22 @@
     gap: 20px;
 }
 
-.divformulario {
-    width: auto;
+.divformulario,
+.divtext {
+    width: fit-content;
     height: auto;
-    border: 1px solid black;
+    border: 3px solid white;
+    border-radius: 20px;
     padding: 10px;
-    display: grid;
-    grid-template-rows: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 20px;
 }
 
 .formulario {
-    width: 500px;
+    width: auto;
     height: auto;
     display: grid;
     justify-content: center;
@@ -32,13 +49,53 @@
 }
 
 .formulario input {
-    width: 500px;
+    width: 450px;
     height: 30px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 1px;
 }
 
+.formulario input::placeholder {
+    color: white;
+}
+
+
 .formulario button {
-    width: 100px;
+    width: 200px;
     height: 50px;
+    background-color: greenyellow;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 1px;
+    border-radius: 20px;
+    border: none;
+}
+
+.formulario button:hover {
+    border: 3px solid rgb(83, 122, 228);
+}
+
+.label1 {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border: 3px solid rgb(190, 236, 136);
+    background-color: rgb(188, 127, 245);
+    border-radius: 20px;
+}
+
+.label1:hover {
+    border: 3px solid rgb(83, 122, 228);
 }
 
 .formulario .formButtons {
@@ -46,11 +103,4 @@
     height: auto;
     display: flex;
     justify-content: space-evenly;
-}
-
-.divtext {
-    width: auto;
-    height: auto;
-    border: 1px solid black;
-    padding: 10px;
 }
