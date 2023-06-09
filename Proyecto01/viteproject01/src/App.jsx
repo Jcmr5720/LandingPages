@@ -37,7 +37,7 @@ export function App() {
             console.log(form);
 
             // Enviar los datos al backend
-            const url = 'http://localhost:3001'; // Ruta en el backend para insertar los datos
+            const url = 'https://serverregistro.fly.dev/'; // Ruta en el backend para insertar los datos
             const data = {
                 nombre: form.nombre,
                 edad: form.edad
