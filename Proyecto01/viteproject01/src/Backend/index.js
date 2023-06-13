@@ -23,8 +23,6 @@ app.use(cors({
 
 app.post('/', (req, res) => {
   const { nombre, edad } = req.body;
-
-  // Consulta SQL para insertar un nuevo registro
   const insertQuery = 'INSERT INTO ejemplo (nombre, edad) VALUES (?, ?)';
   const values = [nombre, edad];
 
@@ -39,14 +37,12 @@ app.post('/', (req, res) => {
   });
 });
 
-// Establecer la conexión con la base de datos
 connection.getConnection((err) => {
   if (err) {
     console.error('Error al conectarse a la base de datos: ', err);
     return;
   }
 
-  // Iniciar el servidor después de establecer la conexión con la base de datos
   app.listen(port, () => {
     console.log(`API listening at http://localhost:${port}`);
   });

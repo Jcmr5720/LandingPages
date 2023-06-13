@@ -4,6 +4,7 @@
     margin: 0;
     font-family: 'Inconsolata', monospace;
     color: white;
+    overflow: hidden;
 }
 
 body {
@@ -64,6 +65,9 @@ body {
     color: white;
 }
 
+.formulario input:focus {
+    background-color: transparent;
+}
 
 .formulario button {
     width: 200px;
@@ -107,4 +111,12 @@ body {
 
 .logox svg{
     cursor: pointer;
+}
+
+/* MAIN2 */
+
+.main2{
+    width: 500px;
+    height: 100px;
+    border: 1px solid white;
 }

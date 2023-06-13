@@ -1,0 +1,20 @@
+header {
+    width: 100%;
+    height: auto;
+}
+
+header ul {
+    list-style: none;
+    margin: 20px 0 20px 0;
+    display: flex;
+    justify-content: flex-start;
+    gap: 25px;
+    align-items: center;
+}
+
+header li:hover {
+    transform: scale(1.1);
+    background-color: aqua;
+    color: black;
+    cursor: pointer;
+}
